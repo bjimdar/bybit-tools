@@ -49,6 +49,7 @@
         
         <v-text-field
             v-for="symbol in $bybitApi.availableSymbols"
+            :key="symbol"
             v-model="$ui.chartsIds[symbol]"
             :label="symbol + ' Tradingview chart id'"
         ></v-text-field>
