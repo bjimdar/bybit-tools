@@ -36,7 +36,7 @@ npm run electron:build
 
 ##### If you like this app and it's useful to you, please consider supporting my work
 
-BTC Tip line : 1NkgAB4JmbTp7NFkWPVnpZiWJkgoxUkpks
+BTC Tip line : Coming Soon
 
-ETH Tip line : 0xedde349177388e3d979223ab6f0d9848ba4b08d8
+ETH Tip line : Coming Soon
 
