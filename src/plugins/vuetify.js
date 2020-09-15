@@ -1,17 +1,17 @@
-import Vue from 'vue';
-import Vuetify, {VTextField} from 'vuetify/lib';
+import Vue from "vue";
+import Vuetify, { VTextField } from "vuetify/lib";
 
 Vue.use(Vuetify, {
   components: {
-    VTextField,
-  },
+    VTextField
+  }
 });
 
 export default new Vuetify({
   icons: {
-    iconfont: 'mdi',
+    iconfont: "mdi"
   },
   components: {
-    VTextField,
-  },
+    VTextField
+  }
 });

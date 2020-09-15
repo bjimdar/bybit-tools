@@ -1,5 +1,5 @@
 export default {
-  name: 'header-comp',
+  name: "header-comp",
   components: {},
   props: [],
   data() {
@@ -9,16 +9,15 @@ export default {
       markPriceIncreasing: false,
       markPriceDecreasing: false,
       symbolIndex: this.$bybitApi.availableSymbols.indexOf(
-          this.$bybitApi.currentSymbol),
+        this.$bybitApi.currentSymbol
+      )
     };
   },
   computed: {},
-  mounted() {
-  
-  },
+  mounted() {},
   methods: {},
   watch: {
-    '$bybitApi.lastPrice': function(newPrice, oldPrice) {
+    "$bybitApi.lastPrice": function(newPrice, oldPrice) {
       if (newPrice > oldPrice) {
         this.lastPriceIncreasing = true;
         this.lastPriceDecreasing = false;
@@ -27,7 +26,7 @@ export default {
         this.lastPriceDecreasing = true;
       }
     },
-    '$bybitApi.markPrice': function(newPrice, oldPrice) {
+    "$bybitApi.markPrice": function(newPrice, oldPrice) {
       if (newPrice > oldPrice) {
         this.markPriceIncreasing = true;
         this.markPriceDecreasing = false;
@@ -37,7 +36,9 @@ export default {
       }
     },
     symbolIndex: function() {
-      this.$bybitApi.changeSymbol(this.$bybitApi.availableSymbols[this.symbolIndex]);
-    },
-  },
+      this.$bybitApi.changeSymbol(
+        this.$bybitApi.availableSymbols[this.symbolIndex]
+      );
+    }
+  }
 };

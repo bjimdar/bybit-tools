@@ -2,6 +2,7 @@
   "name": "bybit-tools",
   "version": "0.5.0",
   "private": true,
+  "license": "SEE LICENSE IN ./LICENSE File",
   "author": "Brian Jimdar <bjimdar@gmail.com>",
   "description": "Advanced tools for ByBit Margin Trading",
   "repository": "https://github.com/bjimdar/bybit-tools",

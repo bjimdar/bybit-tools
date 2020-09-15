@@ -3,7 +3,7 @@
 module.exports = {
   configureWebpack: {
     resolve: {
-      mainFields: ['main', 'browser']
+      mainFields: ["main", "browser"]
     }
   },
   pluginOptions: {
@@ -11,26 +11,22 @@ module.exports = {
       builderOptions: {
         // options placed here will be merged with default configuration and passed to electron-builder
         win: {
-          "target": [
+          target: [
             {
-              "target": "zip",
-              "arch": [
-                "x64"
-              ],
+              target: "zip",
+              arch: ["x64"]
             },
             {
-              "target" : "dir",
-              "arch": [
-                "x64"
-              ],
+              target: "dir",
+              arch: ["x64"]
             }
-          ],
+          ]
         },
         linux: {
-          target: ["dir", "appimage"],
+          target: ["dir", "appimage"]
         },
         mac: {
-          target: ["dir", "zip"],
+          target: ["dir", "zip"]
         }
       }
     }

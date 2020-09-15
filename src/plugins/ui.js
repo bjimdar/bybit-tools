@@ -6,22 +6,23 @@ export default {
         showRiskManagementPane: false,
         showOpenPosition: true,
         chartsIds: {
-          "BTCUSD" : '',
-          "ETHUSD" : '',
-          "EOSUSD" : '',
-          "XRPUSD" : ''
+          BTCUSD: "",
+          ETHUSD: "",
+          EOSUSD: "",
+          XRPUSD: ""
         }
       },
       methods: {},
       created() {
         if (localStorage.showTvChart !== undefined) {
-          this.showTvChart = localStorage.showTvChart === 'true';
+          this.showTvChart = localStorage.showTvChart === "true";
         }
         if (localStorage.showRiskManagementPane !== undefined) {
-          this.showRiskManagementPane = localStorage.showRiskManagementPane === 'true';
+          this.showRiskManagementPane =
+            localStorage.showRiskManagementPane === "true";
         }
         if (localStorage.showOpenPosition !== undefined) {
-          this.showOpenPosition = localStorage.showOpenPosition === 'true';
+          this.showOpenPosition = localStorage.showOpenPosition === "true";
         }
         if (localStorage.chartsIds !== undefined) {
           this.chartsIds = JSON.parse(localStorage.chartsIds);
@@ -47,8 +48,8 @@ export default {
           } else {
             this.$bybitApi.disablePositionInterval();
           }
-        },
-      },
+        }
+      }
     });
-  },
+  }
 };
